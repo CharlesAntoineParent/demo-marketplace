@@ -1,0 +1,29 @@
+{
+  "name": "al",
+  "displayName": "AL (Business Central)",
+  "version": "0.1.0",
+  "description": "AL / Business Central: lint automatique des fichiers .al, MCP ALCops et skills d'équipe (build, nouvel objet, événements, tests, revue).",
+  "author": { "name": "Charles-Antoine Parent" },
+  "license": "MIT",
+  "keywords": ["al", "business-central", "lint"],
+  "userConfig": {
+    "analyzers": {
+      "type": "string",
+      "title": "Analyseurs AL",
+      "description": "Analyseurs intégrés à exécuter, séparés par des virgules (CodeCop, UICop, PerTenantExtensionCop, AppSourceCop).",
+      "default": "CodeCop,UICop"
+    },
+    "custom_analyzers": {
+      "type": "string",
+      "title": "Analyseurs supplémentaires",
+      "description": "Chemins vers d'autres DLL d'analyseurs (ex.: ALCops), séparés par des points-virgules. Laisser vide si aucun.",
+      "default": ""
+    },
+    "ruleset": {
+      "type": "string",
+      "title": "Ruleset",
+      "description": "Chemin du fichier ruleset, relatif à la racine du projet AL (ex.: team.ruleset.json). Laisser vide si aucun.",
+      "default": ""
+    }
+  }
+}

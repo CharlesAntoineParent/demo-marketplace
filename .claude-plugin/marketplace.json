@@ -1,0 +1,15 @@
+{
+  "name": "al-tools",
+  "description": "Plugins Claude Code pour le développement AL (Business Central).",
+  "owner": { "name": "Charles-Antoine Parent" },
+  "metadata": { "pluginRoot": "./plugins" },
+  "plugins": [
+    {
+      "name": "al",
+      "source": "al",
+      "description": "AL / Business Central: lint automatique des fichiers .al, MCP ALCops et skills d'équipe (build, nouvel objet, événements, tests, revue).",
+      "category": "business-central",
+      "tags": ["al", "business-central", "lint"]
+    }
+  ]
+}
